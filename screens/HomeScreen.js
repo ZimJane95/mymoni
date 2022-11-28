@@ -40,15 +40,41 @@ export function HomeScreen(){
 
 
     return(
-        <View>
-            <View style={styles.nav}>
+        +<SafeArea>
+            <View style={styles.container}>
+              <View style={styles.nav}>
                 <Text style={styles.brandName}>mymoni</Text>
                 <View style={styles.profile}>
                     <Image source={require('../assets/profile-pix.jpg')}
                     style={styles.profilePix}/>
                 </View>
+               </View>
+
+               <View style={styles.homeContent}>
+                  <View style={ styles.tipBlock}>
+                    <Text style={styles.tipDate}>12 June 2022</Text>
+                    <View style={styles.tipsDetails}>
+                          <View style={styles.tipTextBlock}>
+                             <Text style={styles.tip}> By age 25, you should have saved at least 0.5x your annual expenses. The more the better. In other words, If you spend $50,000 a year, you should have about $25,000 in your savings. If you spand $100,000 a year, you should have at least $50,000 in savings</Text>
+                          </View>
+                        <Image style={styles.tipImage} source={require('../assets/piggy-bank.jpg')}/>
+                    </View>
+                    <Text style={styles.previousTipsText}></Text>
+                  </View>
+
+                  <View style={ styles.fileTrans}>
+
+                  </View>
+                  <View style={ styles.upcoming}>
+
+                  </View>
+                  <View style={ styles.quizes}>
+
+                </View>
+              </View>
+               
             </View>
-        </View>
+        </SafeArea>
     )
     
     
