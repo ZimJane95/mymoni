@@ -23,7 +23,7 @@ import { Ionicons } from '@expo/vector-icons';
 //add assets/carousel/never_give_up.jpg
 //update Homescreen.js
 
-function HomeScreen(){
+function HomeScreen({navigation}){
     const [appIsReady, setAppIsReady] = useState(false);
 
     useEffect(() => {
@@ -64,7 +64,7 @@ function HomeScreen(){
                 <Image style={styles.tipOfDayImg} source={require('../assets/piggy-bank.jpg')}/>
               </View>
               <View style={styles.tip}>
-                <Text style={styles.tipText}>By age 25, you should have saved at least 0.5x your annual expenses. The more the better. In other words, If you spend $50,000 a year, you should have about $25,000 in your savings</Text>
+                <Text style={styles.tipText}>By age 25, you should have saved at least 0.5x your annual expenses. The more the better.</Text>
                 <View style={styles.tipOptions}>
                   <TouchableOpacity>
                     <Text style={styles.preTips}>Previous tips</Text>
@@ -99,7 +99,11 @@ function HomeScreen(){
               <Text style={styles.quizHeading}>Test your literacy</Text>
               <Text style={styles.quizInfo}>Take test</Text>
             </View>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={()=> navigation.navigate('Quizes', {
+              userName:'Jane',
+              email: 'ibezimjane4@gmail.com',
+              
+            })}>
               <FontAwesomeIcon 
               icon={faArrowRight} 
               color={Theme.colors.brown300}
