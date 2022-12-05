@@ -15,8 +15,8 @@ export function History({navigation}){
                 </View>
 
                 <View style={styles.transOptions}>
-                <Button style={styles.expense} mode='contained'>Expenses</Button>
-                <Button style={styles.income} mode='contained'>Income</Button>
+                    <Button style={styles.expense} mode='contained'>Expenses</Button>
+                    <Button style={styles.income} mode='contained'>Income</Button>
                 </View>
             </View>
             {/* <View>

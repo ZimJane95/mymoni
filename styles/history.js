@@ -10,10 +10,15 @@ export const styles= StyleSheet.create({
        marginTop: Theme.sizes[8]
     },
     transHis:{
-        textAlign: 'center'
+        color:Theme.colors.purple700,
+        textAlign: 'center',
+        fontSize: Theme.fonts.fontSizePoint.title,
+        fontWeight: "bold",
     },
-    transOption:{
-        marginTop: Theme.sizes[6]
+    transOptions:{
+        marginTop: 20,
+        flexDirection: "row",
+        justifyContent: "space-evenly",
     },
     expense:{
         color: 'white',
