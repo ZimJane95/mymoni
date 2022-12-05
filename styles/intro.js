@@ -6,10 +6,10 @@ import { Theme } from "../themes/theme";
 export const styles= StyleSheet.create({
     container:{
         flex: 1,
-        paddingTop:Theme.sizes[2],
+        paddingTop:Theme.sizes[1],
         paddingHorizontal:10,
         justifyContent: 'center',
-        backgroundColor: '#3B185F'
+        backgroundColor: Theme.colors.orange300,
     },
     mymonilogo:{
         alignItems: 'center'
@@ -18,7 +18,7 @@ export const styles= StyleSheet.create({
         width:30,
         height: 30,
         borderWidth: 2,
-        borderColor: 'white',
+        borderColor: 'black',
         borderRadius: 50,
         alignItems: "center",
         backgroundColor: 'white',
@@ -29,50 +29,61 @@ export const styles= StyleSheet.create({
         fontFamily: "Lobster_400Regular",
         fontWeight: "bold",
         fontSize: 30,
-        color: 'white',
+        color: Theme.colors.purple700,
     },
     introTips:{
-        color: 'White',
+        
     },
     introtips:{
         fontFamily: 'Philosopher_700Bold',
-        marginTop: 30,
-        fontSize: 20,
+        marginTop: 10,
+        fontSize: Theme.fonts.fontSizePoint.title,
         textAlign: 'center',
-        color: 'white',
+        color: Theme.colors.purple700,
     },
     introImage:{
        
     },
     homeImage:{
         width: '100%',
-        height: 300,
-        borderRadius: 50,
+        height: 250,
         marginVertical: 15,
     },
     input:{
-        color: 'White',
-        backgroundColor: '#C147E9',
+        color: 'white',
+        backgroundColor: Theme.colors.orange900,
         borderWidth: 2,
-        borderColor: "purple700",
+        borderColor: Theme.colors.purple700,
         width: 320,
         height: 40,
-        borderRadius: 30,
         textAlign: 'center',
-        marginVertical: 5,
+       
         
     },
     inputs:{
         color: 'white',
-        backgroundColor: '#FF6D28',
+        backgroundColor:Theme.colors.purple700,
         borderWidth: 2,
-        borderColor: "purple700",
+        borderColor: Theme.colors.purple700,
         width: 320,
         height: 40,
-        borderRadius: 30,
         textAlign: 'center',
-        marginVertical: 5,
-        
+        marginVertical: 5,   
     },
+    signIn:{
+        marginVertical: 10,
+        marginHorizontal: 10,
+    },
+    flex:{
+        flexDirection: 'row',
+        justifyContent: 'space-evenly',
+        marginBottom: Theme.sizes[5],
+    },
+    menuBox:{
+        width: 80,
+        height: 60,
+        borderRadius: 5,  
+    },
+
 
 })
