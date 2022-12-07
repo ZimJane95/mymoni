@@ -26,7 +26,7 @@ export const styles= StyleSheet.create({
         
     },
     mymonibrandname:{
-        fontFamily: "Lobster_400Regular",
+        fontFamily: 'Lobster_400Regular',
         fontWeight: "bold",
         fontSize: 30,
         color: Theme.colors.purple700,

@@ -1,12 +1,10 @@
-import { useContext } from 'react';
-import { AppContext } from '../globals/AppContext';
 import { View, Text, FlatList, TouchableOpacity  } from 'react-native';
+import { Button } from 'react-native-paper';
+import { Incometrans } from '../components/coHost';
 import { styles } from '../styles/history';
 import { SafeArea } from '../utilities/AreaView';
-import { Button, TextInput } from 'react-native-paper';
-import { Expensetrans } from '../components/host';
 
-export function History({navigation}){
+export function Incomehistory({navigation}){
     // const {email,setEmail,fullName} = useContext(AppContext)
     return(
         <SafeArea>
@@ -15,17 +13,14 @@ export function History({navigation}){
                     <Text style={styles.transHis}>Transaction History</Text>
                 </View>
 
-                <View style={styles.transOptions}>
-                    <Button style={styles.expense} mode='contained'onPress={() => navigation.navigate('History')}>Expenses</Button>
-                    <Button style={styles.income} mode='contained'onPress={() => navigation.navigate('Incomehistory')}>Income</Button>
-                </View>
+                
                 <View style={styles.historyBlock}>
                     <FlatList
-                        data={Expensetrans}
+                        data={Incometrans}
                         renderItem={({item}) =>{
                             return(
                                 <TouchableOpacity style={styles.transDetails}>
-                                    <View style={styles.expenseInfo}>
+                                    <View style={styles.incomeInfo}>
                                         <Text style={styles.userGross}>{item.transPurpose}</Text>
                                         <Text style={styles.userAmount}>{item.transAmount}</Text>
                                         <Text style={styles.userDate}>{item.transDate}</Text>

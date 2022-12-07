@@ -4,7 +4,7 @@ import { Theme } from "../themes/theme";
 export const styles= StyleSheet.create({
     container:{
         flex: 1,
-        backgroundColor: Theme.colors.orange500,
+        backgroundColor: 'white',
     },
     transHeadLine:{
        marginTop: Theme.sizes[8]
@@ -37,5 +37,26 @@ export const styles= StyleSheet.create({
         width: 150,
         height: 40,
         textAlign: 'center',
+    },
+    historyBlock:{
+        marginVertical:10,
+    },
+    transDetails:{
+        borderWidth : 1,
+        borderColor : "#EAEAEA",
+        borderRadius : Theme.sizes[3],
+        padding : Theme.sizes[1],
+        marginBottom: 6,
+        marginHorizontal: 10,
+    },
+    expenseInfo:{
+        marginHorizontal: 20,
+    },
+    incomeInfo:{
+        marginHorizontal: 20,
+    },
+    userStamp:{
+        color: 'grey',
+        marginTop:Theme.sizes[1]
     },
 })

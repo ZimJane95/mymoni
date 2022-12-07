@@ -59,6 +59,7 @@ function HomeScreen({navigation}){
               <Text style={styles.brandText}>mymoni</Text>
               <View style={styles.profileOutline}><Image style={styles.userPix} source={require('../assets/profile-pix.jpg')}/></View>
             </View>
+            
             <View style={styles.tipOfDay}>
               <View style={styles.tipImgBlock}>
                 <Image style={styles.tipOfDayImg} source={require('../assets/piggy-bank.jpg')}/>

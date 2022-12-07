@@ -1,7 +1,7 @@
 let now = new Date();
 
 console.log(now)
-export const transHistory = [
+export const Incometrans = [
     {
         transPurpose: "Salary",
         transAmount: "N25000",
@@ -9,7 +9,7 @@ export const transHistory = [
         timestamp: 1667007671,
     },
     {
-        transPurpose: "Estate",
+        transPurpose: "Real Estate Investment",
         transAmount: "N100000",
         transDate: now.toLocaleDateString(),
         timestamp: 1667007671,
@@ -21,13 +21,13 @@ export const transHistory = [
         timestamp: 1667007671,
     },
     {
-        transPurpose: "Investment",
+        transPurpose: "Shipping Investment",
         transAmount: "N8000",
         transDate: now.toLocaleDateString(),
         timestamp: 1667007671,
     },
     {
-        transPurpose: "Husband",
+        transPurpose: "Husband Upkeep", 
         transAmount: "N10,000",
         transDate: now.toLocaleDateString(),
         timestamp: 1667007671,
