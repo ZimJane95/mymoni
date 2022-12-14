@@ -11,7 +11,7 @@ import { History } from './History';
 import { Incomehistory } from './Incomehistory';
 
 
-const Stack = createNativeStackNavigator()
+const Stack = createNativeStackNavigator();
 
 export function StackNavigator(){
     return(
