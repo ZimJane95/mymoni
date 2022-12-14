@@ -31,19 +31,19 @@ export function AddIncome(){
                 </View>
 
                 <Formik
-                initialValues={{
-                    amount:0,
-                    description:''
-                }}
-                onSubmit={(values, actions) =>{
-                    console.log(values.amount,values.description);
+                    initialValues={{
+                        amount:0,
+                        description:''
+                    }}
+                    onSubmit={(values, actions) =>{
+                        console.log(values.amount,values.description);
 
-                    actions.resetForm(); //clears inputs
-                }}
-                validationSchema={formRules}>
+                        actions.resetForm(); //clears inputs
+                    }}
+                    validationSchema={formRules}>
                     {({handleChange, handleBlur, handleSubmit, values, touched,errors }) =>(
                         <>
-                        <TextInput
+                    <TextInput
                         placeholder='income amount'
                         mode='outlined'
                         outlineColor={Theme.colors.green700}

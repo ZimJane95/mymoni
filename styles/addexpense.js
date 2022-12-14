@@ -15,7 +15,7 @@ export const styles = StyleSheet.create({
     },
     headerText:{
         fontSize:Theme.fonts.fontSizePoint.h5,
-        color:Theme.colors.red700,
+        color:Theme.colors.redAltYellow,
         fontWeight:'bold',
     }
 })
